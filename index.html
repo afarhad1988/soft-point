@@ -35,11 +35,11 @@
 </header>
 <section class="hero">
 	<div class="container">
-		<div class="row">
+		<div class="row align-center">
 			<div class="col-5">
 				<h1 class="hero-title">Develop Your Life With <span class="hero-step">One Step.</span></h1>
 				<p class="hero-desc">Pushing the possibilities of the internet. Good for
-					the last software. Make it A software night.</p>
+					the last software. <span>Make it A software night.</span></p>
 				<form class="feedback-form">
 					<input class="feedback-input" type="email" placeholder="Enter your email">
 					<button type="submit" class="feedback-btn">Send</button>
@@ -177,14 +177,21 @@
 			speed of life. Empowered by Innovation.</p>
 		<div class="switch">
 			<p class="before-switcher">Monthly</p>
+			<!**********switch************>
 			<input type="checkbox" id="switch"
 				   class="checkbox dark-modeBtn"/>
 			<label for="switch" class="toggle">
 			</label>
+			<!**********switch************>
 			<p class="after-switcher">Quarterly</p>
 		</div>
 		<h5 class="switch-save">Save up to 40%</h5>
 
+		<!***************range**************>
+		<div class="range-container">
+			<input type="range" id="range" max="260" min="0">
+			<label for="range">130$</label>
+		</div>
 		<!***************range**************>
 
 		<div class="row">
@@ -282,7 +289,7 @@
 			</div>
 			<div class="col-3">
 				<h4 class="footer-title">Contact Us</h4>
-				<p class="tel">(773) 217-8810</p>
+				<a class="tel" href="tel: +7732178810">(773) 217-8810</a>
 				<p class="address">Downers Grove, IL 60515</p>
 
 			</div>

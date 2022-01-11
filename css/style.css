@@ -38,6 +38,9 @@ a, a:hover {
     font-size: 18px;
     margin-bottom: 16px;
 }
+.align-center{
+    align-items: center;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +108,7 @@ a, a:hover {
 .hero-title {
     font-weight: 600;
     font-size: 53px;
-    margin-top: 120px;
+    /*margin-top: 120px;*/
 }
 
 .hero-step {
@@ -113,11 +116,13 @@ a, a:hover {
 }
 
 .hero-desc {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     margin-bottom: 40px;
 }
-
+.hero-desc span{
+    font-weight: 500;
+}
 .feedback-form {
     position: relative;
     margin-bottom: 40px;
@@ -127,12 +132,16 @@ a, a:hover {
     width: 470px;
     height: 65px;
     border-radius: 6px;
-    border: 1px solid #000000;
-    box-shadow: -5px 5px 20px rgb(0 0 0 / 25%);
     font-size: 18px;
     padding: 24px 0 24px 19px;
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    box-shadow: -5px 5px 20px rgb(0 0 0 / 25%);
+    border: none;
 }
-
+.feedback-input:hover{
+    /*border: 1px solid #000000;*/
+    border: none;
+}
 .feedback-btn {
     padding: 11px 33px;
     background: #F44545;
@@ -314,12 +323,15 @@ a, a:hover {
 .software-btn:hover{
     background: #b01212;
 }
-.pricing{
+.pricing {
     padding: 110px 0 120px;
+}
+.pricing h2{
     text-align: center;
 }
 .pricing-mb{
     margin-bottom: 30px;
+    text-align: center;
 }
 .switch{
     display: flex;
@@ -341,25 +353,19 @@ a, a:hover {
     font-weight: 600;
     font-size: 18px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .switch-save:after{
     content: url("../image/arrow.svg");
     position: absolute;
     top: -12px;
     right: 39.5%;
-    display: none;
+
 
 }
-.switch-save:before{
-    content: url("../image/arrow.svg");
-    position: absolute;
-    transform: scaleX(-1);
-    top: -10px;
-    left: 39.5%;
 
-}
-/*===========================*/
+/*=========switch========*/
 .toggle {
     position : relative ;
     display : inline-block;
@@ -398,6 +404,108 @@ a, a:hover {
 .checkbox {
     display : none;
 }
+/*=========switch========*/
+
+/*============range==========*/
+
+.range-container {
+    position: relative;
+    margin-bottom: 93px;
+
+}
+
+input[type=range] {
+    width: 100%;
+    margin: 30px 0;
+    -webkit-appearance: none;
+}
+
+input[type=range] + label {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+    position: absolute;
+    top: -25px;
+    left: 110px;
+    text-align: center;
+    width: 80px;
+
+}
+
+input[type=range]:active {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    animate: 0.2s;
+    background-color: #3EFFC0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 7.5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #3EFFC0;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    margin-top: -7px;
+    -webkit-appearance: none;
+}
+
+/*input[type=range]:active::-webkit-slider-runnable-track {*/
+/*    opacity: 0.8;*/
+/*}*/
+/*input[type=range]::-moz-range-track {*/
+/*    animate: 0.2s;*/
+/*    background: #3EFFC0;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    width: 100%;*/
+/*    height: 7.5px;*/
+/*}*/
+/*input[type=range]::-moz-range-thumb {*/
+/*    background: #ffffff;*/
+/*    border-radius: 50%;*/
+/*    border: 1px solid purple;*/
+/*    cursor: pointer;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*}*/
+/*input[type=range]::-ms-track {*/
+/*    animate: 0.2s;*/
+/*    background-color: purple;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    width: 100%;*/
+/*    height: 7.5px;*/
+/*}*/
+/*input[type=range]::-ms-thumb {*/
+/*    background: #ffffff;*/
+/*    border-radius: 50%;*/
+/*    border: 1px solid purple;*/
+/*    cursor: pointer;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*input[type=range]:active::-ms-fill-lower {*/
+/*    background: purple;*/
+/*}*/
+
+/*input[type=range]:active::-ms-fill-upper {*/
+/*    background: purple;*/
+/*}*/
+
+
+/*============range==========*/
 .pricing-item{
     padding: 35px 29px 35px 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -475,7 +583,6 @@ a, a:hover {
 
 .pricing-btn{
     padding: 13px 76px;
-    /*background: #F44545;;*/
     color: #F44545;
     border-radius: 6px;
     background: #ffffff;
@@ -485,14 +592,17 @@ a, a:hover {
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
     transition: 0.7s;
+    cursor: pointer;
 }
 .pricing-item:hover{
     box-shadow: 0 20px 100px rgba(2, 18, 6, 0.15);
     border: none;
+
 }
 .pricing-item:hover .pricing-btn{
     background: #F44545;
     color: #fff;
+
 }
 .footer{
     background: #F2FBF9;
@@ -504,6 +614,8 @@ a, a:hover {
 .footer-subtitle{
     font-size: 16px;
     font-weight: 500;
+    color: #021206;
+    opacity: 0.7;
 }
 
 .footer-title{
@@ -519,5 +631,9 @@ a, a:hover {
     margin-bottom: 10px;
 }
 .tel{
+    font-size: 16px;
+    color: #021206;
+    opacity: 0.7;
+    display: block;
     margin-bottom: 10px;
 }
