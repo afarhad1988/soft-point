@@ -12,6 +12,9 @@ body {
     color: #021206;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 button{
     border: none;
 }
@@ -428,7 +431,7 @@ input[type=range] + label {
     padding: 5px 0;
     position: absolute;
     top: -25px;
-    left: 110px;
+    left: calc(50% - 40px);
     text-align: center;
     width: 80px;
 
