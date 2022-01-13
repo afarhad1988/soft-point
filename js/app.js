@@ -26,3 +26,15 @@ range.addEventListener('input', (e) => {
 const scale = (num, in_min, in_max, out_min, out_max) => {
 	return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+AOS.init();
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		items: 5,
+		loop: true,
+		margin: 60,
+		autoplay: true,
+
+	});
+});
