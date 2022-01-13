@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     color: #021206;
 
+
 }
 
 html {
@@ -524,30 +525,30 @@ input[type=range]::-webkit-slider-thumb {
 
 /*============range==========*/
 
-.pricing .row {
-    position: relative;
-    z-index: 5;
-}
+/*.pricing .row {*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*}*/
 
-.left-round {
-    position: absolute;
-    z-index: -1;
-    bottom: 5%;
-    left: -10%;
-}
+/*.left-round {*/
+/*    position: absolute;*/
+/*    z-index: 5;*/
+/*    bottom: -200px;*/
 
-.right-round {
-    position: absolute;
-    top: 10%;
-    right: -9%;
-    z-index: -2;
-}
+/*}*/
+
+/*.right-round {*/
+/*    position: absolute;*/
+/*    top: -170px;*/
+
+/*    z-index: 2;*/
+/*}*/
 
 .pricing-item {
     padding: 35px 29px 35px 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: white;
+    /*background: white;*/
 
 }
 
@@ -692,4 +693,14 @@ input[type=range]::-webkit-slider-thumb {
     opacity: 0.7;
     display: block;
     margin-bottom: 10px;
+}
+
+.slick-prev:before{
+   color: grey;
+    opacity: 1;
+}
+
+.slick-next:before {
+    color: grey;
+    opacity: 1;
 }

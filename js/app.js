@@ -35,6 +35,51 @@ $(document).ready(function(){
 		loop: true,
 		margin: 60,
 		autoplay: true,
-
+		responsive: {
+			1200:{
+				items: 5,
+			},
+			768:{
+				items:2,
+				// margin: 50
+			},
+			320:{
+				items:1
+			}
+		}
 	});
+});
+
+
+$('.single-item').slick({
+	infinite: true,
+	dots: true,
+	slidesToShow: 3,
+	slidesToScroll: 2,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 320,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+
+	]
 });

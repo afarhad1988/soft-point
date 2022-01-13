@@ -1,0 +1,40 @@
+@media (max-width: 1200px) {  /*993-1200*/
+
+    .container {
+        width: 950px;
+    }
+
+    .menu-link {
+        margin: 0 9px;
+    }
+
+    .hero-step:after {
+        position: absolute;
+        left: 136px;
+        bottom: -1px;
+    }
+
+    .pricing-item {
+        padding: 35px 5px 35px 31px;
+    }
+    .col-4{
+        padding: 0 10px;
+    }
+    .owl-carousel .owl-item img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px){      /*769-992*/
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px){       /*577-768*/
+
+}
+
+@media (max-width: 576px){     /*320-576*/
+
+}
