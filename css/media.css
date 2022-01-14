@@ -383,6 +383,9 @@
     .last {
         margin-bottom: 20px;
     }
+    .footer-logo {
+        width: 100px;
+    }
 
 }
 
@@ -392,7 +395,12 @@
     .container {
         width: 310px;
     }
-
+    .menu{
+        display: none;
+    }
+    .login {
+        margin-left: -36px;
+    }
     .col-6 {
         width: 100%;
     }
@@ -404,7 +412,9 @@
     .col-5 {
         width: 100%;
     }
-
+    .apps-google {
+        margin-right: 12px;
+    }
     .software-img {
         position: absolute;
         top: -2px;
@@ -437,5 +447,8 @@
     }
     .footer-subtitle{
         margin-bottom: 10px;
+    }
+    .footer{
+        text-align: center;
     }
 }
