@@ -285,8 +285,8 @@ a, a:hover {
 }
 
 .solution-btn {
-    width: 183px;
-    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 40px;
     background: #282323;
     color: #fff;
     border-radius: 6px;

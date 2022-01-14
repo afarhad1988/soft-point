@@ -40,11 +40,11 @@ $(document).ready(function(){
 				items: 5,
 			},
 			768:{
-				items:2,
-				// margin: 50
+				items: 3,
+
 			},
 			320:{
-				items:1
+				items:2
 			}
 		}
 	});
@@ -67,10 +67,24 @@ $('.single-item').slick({
 			}
 		},
 		{
-			breakpoint: 768,
+			breakpoint: 992,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
 			}
 		},
 		{
