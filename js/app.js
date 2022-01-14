@@ -33,18 +33,21 @@ $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		items: 5,
 		loop: true,
-		margin: 60,
+		margin: 50,
 		autoplay: true,
 		responsive: {
 			1200:{
 				items: 5,
+				dots:false
 			},
 			768:{
-				items: 3,
-
+				items: 3
+			},
+			576:{
+				items:2
 			},
 			320:{
-				items:1
+				items:2
 
 			}
 		}
@@ -77,8 +80,8 @@ $('.single-item').slick({
 		{
 			breakpoint: 768,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 2,
+				slidesToScroll: 2
 			}
 		},
 		{

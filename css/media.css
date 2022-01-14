@@ -208,7 +208,7 @@
     }
 
     .pricing-btn {
-        padding: 10px 67px;
+        padding: 10px 49px;
         font-size: 16px;
     }
 
@@ -239,6 +239,14 @@
     .footer-logo {
         width: 125px;
     }
+    .owl-dots{
+        display: none;
+    }
+    .owl-stage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -247,7 +255,9 @@
     .container {
         width: 540px;
     }
-
+    .menu{
+        display: none;
+    }
     .menu-link {
         font-size: 12px;
         margin: 0 2px;
@@ -386,6 +396,14 @@
     .footer-logo {
         width: 100px;
     }
+    .owl-dots{
+        display: none;
+    }
+    .owl-stage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -451,5 +469,16 @@
     }
     .footer{
         text-align: center;
+    }
+    .owl-carousel .owl-item img {
+        width: 75%;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .owl-stage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
